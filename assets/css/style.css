@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(252, 220, 237);
+}
+
+body { background-color: white;} /* tiene que ser de color negro por el momento lo dejo asi */
+.titulo {
+    display: block;
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0rem;
+    padding: 2%;
+    background-color: #FFB3C1;
+    border: 1px solid #FFB3C1;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40xp;
+    
+
+}
+.menu {
+    list-style-type: none; /* Quitamos las viñetas de la lista */
+    color: black;
+    text-align: end;    
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    background-color: #ffedf0;
+
+
+
+}
+.menu li {
+    display:inline-block; /* Ítems del menú en una línea horizontal */ 
+    margin-bottom: auto;
+    margin:0%;
+    padding: 0.5%;
+    background-color: #ffedf0;
+
+
+}
+.menu a {
+    color: black;
+    background-color: #ffedf0;
+}
+.bienvenidos{
+    display:flex ;
+    justify-content: space-around;/*vertical*/
+    padding:1%;
+    align-items: center;
+
+}
+.caja1 {
+    flex-grow: 5;
+
+}
+.caja2 {
+    flex-grow: 5;
+
+}
+.bienvenidos p {
+    color: black;
+    font-size: 50px;
+}
+
+.block { /* es de los h2*/
+        display: block;
+        width: 100%;
+        margin: 0.5%;
+        padding: 2%;
+        background-color: #FFB3C1;
+        border: 1px solid #FFB3C1;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 35px;
+        text-align: center;
+
+    }
+.nosotras {
+    justify-content: space-around;  
+    padding: auto;
+    align-items:flex-start;
+    position: relative;
+
+}
+.nosotras img{
+    position: relative;
+    float: left;
+    margin: 15px;
+    width: 45%;
+}
+.nosotras p{
+    position: static;
+    float: none;
+    text-align: justify;
+}
+ 
+.cyp {
+    display: grid;
+    background-color: #FFB3C1;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 50%);
+    padding: 0%;
+    justify-content: space-between;
+    align-content: space-evenly;
+   
+
+
+}
+.item{
+    text-align: center;
+    justify-content: center;
+    position:auto;
+    height: 100%;
+
+
+}
+
+.formulario{
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    position:static;
+    background-color: #fed1db;
+    border: 2px solid #FFB3C1;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+    font-size: 24px; 
+
+}
+    
+.contacto{ 
+    display:grid;
+    justify-content:center;
+    padding:1%;
+    align-items: center;
+    position: static;
+    padding: 1%;
+
+/* las imagenes tienen que quedar centradas y formar un boton asi los lleva directamente a sus respectivos enlaces*/
+} 
+
+footer {
+    display: block;
+    padding: 1%;
+    border: solid #FFB3C1;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 27px; 
+}
+
+/* Estilos para dispositivos móviles */
+body {
+    font-size: 16px;
+    padding: 10px;
+}
+nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+img {
+        width: 100%;
+        height: auto;
+    }
+div {
+    
+        display: flex;
+        flex-direction: column;
+}
+  
+/* Media query para tabletas */
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+        padding: 20px;
+    }
+    header, main, footer {
+        padding: 20px;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    img {
+        width: 50%;
+    }
+    div {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Media query para computadoras de escritorio */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+        padding: 30px;
+    }
+    header, main, footer {
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    img {
+        width: 50%;
+    }
+    div {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+

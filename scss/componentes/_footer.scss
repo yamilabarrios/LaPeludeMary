@@ -1,0 +1,14 @@
+@use "/utilities/maps" as*;
+
+footer {
+    display: block;
+    padding: 1%;
+    border: solid map-get($map: $colores, $key: fondo );
+   
+    div{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

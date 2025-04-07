@@ -1,0 +1,18 @@
+.nosotras {
+    justify-content: space-around;  
+    padding: auto;
+    align-items:flex-start;
+    position: relative;
+    img{
+        position: relative;
+        float: left;
+        margin: 15px;
+        width: 45%;
+    }
+    p{
+        position: static;
+        float: none;
+        text-align: justify;
+    }
+
+}

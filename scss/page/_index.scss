@@ -1,0 +1,21 @@
+.bienvenidos{
+    display:flex ;
+    justify-content: space-around;/*vertical*/
+    padding:1%;
+    align-items: center;
+    p {
+        color: black;
+        font-size: 50px;
+    }
+    &.caja1 {
+        flex-grow: 5;
+    }
+    &.caja2 {
+    flex-grow: 5;
+}
+}
+
+
+
+
+

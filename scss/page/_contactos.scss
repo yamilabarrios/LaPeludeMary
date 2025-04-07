@@ -1,0 +1,24 @@
+@use "/utilities/maps" as*;
+.formulario{
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    position:static;
+    background-color: map-get($map: $colores, $key:formulario );
+    border: 2px solid map-get($map: $colores, $key: formulario );
+    padding: auto;
+    margin: auto;
+    text-align: center;
+    font-size: 24px; 
+
+}
+    
+.contacto{ 
+    display:grid;
+    justify-content:center;
+    padding:1%;
+    align-items: center;
+    position: static;
+    padding: 1%;
+
+/* las imagenes tienen que quedar centradas y formar un boton asi los lleva directamente a sus respectivos enlaces*/
+} 

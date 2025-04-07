@@ -3,7 +3,7 @@
 footer {
     display: block;
     padding: 1%;
-    border: solid map-get($map: $colores, $key: fondo );
+    border: solid map-get($map: colores, $key: fondo );
    
     div{
         position: relative;

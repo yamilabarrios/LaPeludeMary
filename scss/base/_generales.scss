@@ -1,3 +1,4 @@
+@use "../base/variables" as *;
 @use "../utilities/maps" as *;
 *{
     padding: 0;
@@ -99,7 +100,7 @@ div {
 body { background-color: white;} 
 
 p{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: $tipo-letra;
     text-align: center;
     font-size: 27px; 
 }
@@ -110,9 +111,9 @@ p{
     width: 100%;
     margin-bottom: 0rem;
     padding: 2%;
-    background-color: map-get($map: $colores, $key: fondo);
-    border: 1px solid map-get($map: $colores, $key: fondo);
-    font-family: 'Times New Roman', Times, serif;
+    background-color: map-get($map: colores, $key: fondo);
+    border: 1px solid map-get($map: colores, $key: fondo);
+    font-family: $tipo-letra;
     font-size: 40xp;
     
 
@@ -122,9 +123,9 @@ p{
     width: 100%;
     margin: 0.5%;
     padding: 2%;
-    background-color: map-get($map: $colores, $key: fondo);
-    border: 1px solid map-get($map: $colores, $key: fondo);
-    font-family: 'Times New Roman', Times, serif;
+    background-color: map-get($map: colores, $key: fondo);
+    border: 1px solid map-get($map: colores, $key: fondo);
+    font-family: $tipo-letra;
     font-size: 35px;
     text-align: center;
 

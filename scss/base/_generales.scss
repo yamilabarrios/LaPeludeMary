@@ -97,22 +97,22 @@ div {
         justify-content: space-between;
     }
 }
-body { background-color: white;} 
 
 p{
     font-family: $tipo-letra;
     text-align: center;
     font-size: 27px; 
+    
 }
 .titulo {
     display: block;
-    color: black;
+    color: $coloLetra;
     text-align: center;
     width: 100%;
     margin-bottom: 0rem;
     padding: 2%;
-    background-color: map-get($map: colores, $key: fondo);
-    border: 1px solid map-get($map: colores, $key: fondo);
+    background-color: map-get ($colores,titulo);
+    border: 1px solid map-get ($colores, titulo);
     font-family: $tipo-letra;
     font-size: 40xp;
     
@@ -123,8 +123,8 @@ p{
     width: 100%;
     margin: 0.5%;
     padding: 2%;
-    background-color: map-get($map: colores, $key: fondo);
-    border: 1px solid map-get($map: colores, $key: fondo);
+    background-color:  map-get ($colores, fondo);
+    border: 1px solid  map-get ($colores, fondo);
     font-family: $tipo-letra;
     font-size: 35px;
     text-align: center;

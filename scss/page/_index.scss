@@ -1,10 +1,12 @@
+@use "../base/variables" as*;
+
 .bienvenidos{
     display:flex ;
     justify-content: space-around;/*vertical*/
     padding:1%;
     align-items: center;
     p {
-        color: black;
+        color: $coloLetra ;
         font-size: 50px;
     }
     &.caja1 {

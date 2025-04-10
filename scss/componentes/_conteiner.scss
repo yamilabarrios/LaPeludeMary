@@ -1,8 +1,8 @@
-@use "../scss/utilities/_maps.scss";
+@use "../utilities/maps" as*;
 
 .conteiner {
     display: grid;
-    background-color: map-get($map: colores, $key: fondo );
+    background-color: map-get ($colores,fondo);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 50%);
     padding: 0%;

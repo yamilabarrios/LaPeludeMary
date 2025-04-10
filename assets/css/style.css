@@ -6,41 +6,6 @@
   background-color: rgb(252, 220, 237);
 }
 
-body {
-  background-color: white;
-}
-
-p {
-  font-family: "Times New Roman", Times, serif;
-  text-align: center;
-  font-size: 27px;
-}
-
-.titulo {
-  display: block;
-  color: black;
-  text-align: center;
-  width: 100%;
-  margin-bottom: 0rem;
-  padding: 2%;
-  background-color: #FFB3C1;
-  border: 1px solid #FFB3C1;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 40xp;
-}
-
-.block { /* es de los h2*/
-  display: block;
-  width: 100%;
-  margin: 0.5%;
-  padding: 2%;
-  background-color: #FFB3C1;
-  border: 1px solid #FFB3C1;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 35px;
-  text-align: center;
-}
-
 /* Estilos para dispositivos móviles */
 body {
   font-size: 16px;
@@ -126,27 +91,59 @@ div {
     justify-content: space-between;
   }
 }
+p {
+  font-family: time "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 27px;
+}
+
+.titulo {
+  display: block;
+  color: black;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0rem;
+  padding: 2%;
+  background-color: map-get fondo #FFB3C1, menu #ffedf0, formulario #fed1db, titulo hwb(349 55% 1%), titulo;
+  border: 1px solid map-get fondo #FFB3C1, menu #ffedf0, formulario #fed1db, titulo hwb(349 55% 1%), titulo;
+  font-family: time "Times New Roman", Times, serif;
+  font-size: 40xp;
+}
+
+.block { /* es de los h2*/
+  display: block;
+  width: 100%;
+  margin: 0.5%;
+  padding: 2%;
+  background-color: map-get fondo #FFB3C1, menu #ffedf0, formulario #fed1db, titulo hwb(349 55% 1%), fondo;
+  border: 1px solid map-get fondo #FFB3C1, menu #ffedf0, formulario #fed1db, titulo hwb(349 55% 1%), fondo;
+  font-family: time "Times New Roman", Times, serif;
+  font-size: 35px;
+  text-align: center;
+}
+
 .menu li {
   display: inline-block; /* Ítems del menú en una línea horizontal */
   margin-bottom: auto;
   margin: 0%;
   padding: 0.5%;
-  background-color: #ffedf0;
+  background-color: map-get fondo #FFB3C1, menu #ffedf0, formulario #fed1db, titulo hwb(349 55% 1%), menu;
+  align-items: center;
 }
 .menu a {
   color: black;
-  background-color: #ffedf0;
+  background-color: map-get fondo #FFB3C1, menu #ffedf0, formulario #fed1db, titulo hwb(349 55% 1%), menu;
 }
 
 footer {
   display: block;
   padding: 1%;
-  border: solid #FFB3C1;
- 
+  background-color: map-get fondo #FFB3C1, menu #ffedf0, formulario #fed1db, titulo hwb(349 55% 1%), fondo;
 }
-footer  div{
+footer div {
   position: relative;
   justify-content: center;
+  align-items: center;
 }
 
 .bienvenidos {
@@ -159,12 +156,10 @@ footer  div{
   color: black;
   font-size: 50px;
 }
-
-.caja1 {
+.bienvenidos.caja1 {
   flex-grow: 5;
 }
-
-.caja2 {
+.bienvenidos.caja2 {
   flex-grow: 5;
 }
 
@@ -188,15 +183,14 @@ footer  div{
 
 .conteiner {
   display: grid;
-  background-color: #FFB3C1;
+  background-color: map-get fondo #FFB3C1, menu #ffedf0, formulario #fed1db, titulo hwb(349 55% 1%), fondo;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 50%);
   padding: 0%;
   justify-content: space-between;
   align-content: space-evenly;
 }
-
-.item {
+.conteiner.item {
   text-align: center;
   justify-content: center;
   position: auto;

@@ -1,9 +1,9 @@
-@use "/utilities/maps" as*;
+@use "../utilities/maps" as *;
 
 footer {
     display: block;
     padding: 1%;
-    border: solid map-get($map: colores, $key: fondo );
+    background-color: map-get ($colores,fondo);
    
     div{
         position: relative;

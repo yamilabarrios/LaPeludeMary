@@ -1,16 +1,19 @@
-@use "/utilities/maps" as*;
-@use "/base/variable" as*;
+@use "../utilities/maps" as *;
+@use "../base/variables" as*;
+
 .menu { 
     li{
         display:inline-block; /* Ítems del menú en una línea horizontal */ 
         margin-bottom: auto;
         margin:0%;
         padding: 0.5%;
-        background-color: map-get($map: colores , $key:menu )}
-
+        background-color:  map-get ($colores, menu);
+        align-items: center;
+        }
     a {
         color: $coloLetra;
-        background-color: map-get($map:colores , $key:menu );
+        background-color:  map-get ($colores, menu);
+
     }
     
 } 
